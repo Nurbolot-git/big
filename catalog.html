@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/catalog.css" />
+
+    <title>catalog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__top">
+          <div class="header__nav">
+            <a href="/" class="logo">Bigstroy</a>
+            <div class="header__nav__inner">
+              <ul class="header__nav-list">
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="./catalog.html">Каталог</a>
+                </li>
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="./about.html"
+                    >О нашем магазине</a
+                  >
+                </li>
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="#">Корзина</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="products">
+      <div class="container">
+        <div class="products__inner">
+          <div class="products__top">
+            <div class="products__filter">
+              <label class="products__filter-title" for="products__filter"
+                >Сортировать по:</label
+              >
+              <select class="products__filter-select">
+                >
+                <option value="popular">По популярности</option>
+                <option value="price">Цены: По возрастанию</option>
+                <option value="price">Цены: По убыванию</option>
+              </select>
+            </div>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link breadcrumbs__link--active"
+                    >Страница 1</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="products__row">
+            <div class="products-box">
+              <img
+                class="products-img"
+                src="./img/p-11.jpg"
+                alt="products images"
+              />
+              <div class="products__info">
+                <div class="products__description">
+                  <h5 class="products-title">Моющая краска</h5>
+                  <p class="products-price">
+                    120 <span class="products__currency">сом</span>
+                  </p>
+                </div>
+                <div class="products-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="products-box">
+              <img
+                class="products-img"
+                src="./img/p-2.jpg"
+                alt="products images"
+              />
+              <div class="products__info">
+                <div class="product__description">
+                  <h5 class="products-title">Baswool 1200</h5>
+                  <p class="products-price">
+                    120 <span class="products__currency">сом</span>
+                  </p>
+                </div>
+                <div class="products-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="products-box">
+              <img
+                class="products-img"
+                src="./img/p-3.jpg"
+                alt="products images"
+              />
+              <div class="products__info">
+                <div class="product__description">
+                  <h5 class="products-title">OSB 1200x2500</h5>
+                  <p class="products-price">
+                    120 <span class="products__currency">сом</span>
+                  </p>
+                </div>
+                <div class="products-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="products-box">
+              <img
+                class="products-img"
+                src="./img/p-4.jpg"
+                alt="products images"
+              />
+              <div class="products__info">
+                <div class="product__description">
+                  <h5 class="products-title">Арматура А3</h5>
+                  <p class="products-price">
+                    120 <span class="products__currency">сом</span>
+                  </p>
+                </div>
+                <div class="products-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="products-box">
+              <img
+                class="products-img"
+                src="./img/p-5.jpg"
+                alt="products images"
+              />
+              <div class="products__info">
+                <div class="product__description">
+                  <h5 class="products-title">Емкость 90л</h5>
+                  <p class="products-price">
+                    120 <span class="products__currency">сом</span>
+                  </p>
+                </div>
+                <div class="products-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
