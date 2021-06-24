@@ -66,12 +66,19 @@
     padding: 10px 0 20px;
   }
   .about__info__title {
-    font-size: 20px;
+    font-size: 30px;
   }
   .about__info__inner__item {
     font-size: 18px;
+    width: 100%;
   }
+}
+@media (max-width: 400px) {
   .about__info__inner__list {
+    display: flex;
     justify-content: center;
+  }
+  .about__info__title {
+    font-size: 20px;
   }
 }
