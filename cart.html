@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cart.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bigstroy</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__top">
+          <div class="header__nav">
+            <a href="/" class="logo">Bigstroy</a>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
+            <div class="header__nav__inner">
+              <ul class="header__nav-list">
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="./catalog.html">Каталог</a>
+                </li>
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="./about.html"
+                    >О нашем магазине</a
+                  >
+                </li>
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="./contact.html"
+                    >Обратная связь</a
+                  >
+                </li>
+              </ul>
+            </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <section class="cart">
+          <div class="container">
+              <div class="cart__inner">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                      <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">Главная</a>
+                      </li>
+                      <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link breadcrumbs__link--active"
+                          >Корзина</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="cart__content">
+                  <div class="cart__content__titie">
+                    КОРЗИНА ПОКУПОК
+                  </div>
+                  <div class="cart__content__body">
+                      <ul class="cart__content__list">
+                          <li class="cart__content__items">
+                              <div class="cart__content__left">
+                                  <img src="./img/p-2.jpg" alt="" class="cart__content__img">
+                                  <h3 class="cart__content__title">Моющая краска</h3>
+                              </div>
+                              <div class="cart__content__right">
+                                <div class="cart__content__count">
+                                    <i class="fas fa-minus"></i>
+                                    <p class="cart__amount">1</p>
+                                    <i class="fas fa-plus"></i>
+                                  </div>
+                                  <div class="cart__content__info">
+                                      <p class="cart__content__price">Всего <span>120 com</span> </p>
+                                      <p class="cart__content__text">Цена за шт <span>120 сом</span> 
+                                      </p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="cart__content__items">
+                            <div class="cart__content__left">
+                                <img src="./img/p-11.jpg" alt="" class="cart__content__img">
+                                <h3 class="cart__content__title">Моющая краска</h3>
+                            </div>
+                            <div class="cart__content__right">
+                              <div class="cart__content__count">
+                                  <i class="fas fa-minus"></i>
+                                  <p class="cart__amount">1</p>
+                                  <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="cart__content__info">
+                                    <p class="cart__content__price">Всего <span>120 com</span> </p>
+                                    <p class="cart__content__text">Цена за шт <span>120 сом</span> 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart__content__items">
+                            <div class="cart__content__left">
+                                <img src="./img/p-4.jpg" alt="" class="cart__content__img">
+                                <h3 class="cart__content__title">Моющая краска</h3>
+                            </div>
+                            <div class="cart__content__right">
+                              <div class="cart__content__count">
+                                  <i class="fas fa-minus"></i>
+                                  <p class="cart__amount">1</p>
+                                  <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="cart__content__info">
+                                    <p class="cart__content__price">Всего <span>120 com</span> </p>
+                                    <p class="cart__content__text">Цена за шт <span>120 сом</span> 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <script>
+      function toggleMenu (){
+        const menuToggle=document.querySelector(".menuToggle");
+        const header__nav__inner=document.querySelector(".header__nav__inner");
+        header__nav__inner.classList.toggle("active")
+        menuToggle.classList.toggle("active")
+      }
+    </script>
+  </body>
+</html>
