@@ -56,11 +56,11 @@
 .call__box {
   width: 300px;
   height: 300px;
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -81px;
+  /* top: -81px; */
 }
 
 #call {
@@ -172,5 +172,36 @@
   }
   100% {
     border-top: 15px solid transparent;
+  }
+}
+@media (max-width: 768px) {
+  .call__box {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: -30px;
+    bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .breadcrumbs__item {
+    font-size: 15px;
+  }
+  .call__box {
+    width: 250px;
+    height: 250px;
+    bottom: -70px;
+    right: -38px;
+    position: fixed;
+  }
+  .about__bottom__title {
+    font-size: 20px;
+  }
+  .about__bottom__text {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  #call {
+    font-size: 30px;
   }
 }
