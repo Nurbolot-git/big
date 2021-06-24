@@ -61,3 +61,17 @@
   font-weight: 600;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .about__info {
+    padding: 10px 0 20px;
+  }
+  .about__info__title {
+    font-size: 20px;
+  }
+  .about__info__inner__item {
+    font-size: 18px;
+  }
+  .about__info__inner__list {
+    justify-content: center;
+  }
+}
