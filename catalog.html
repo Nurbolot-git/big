@@ -22,6 +22,7 @@
         <div class="header__top">
           <div class="header__nav">
             <a href="/" class="logo">Bigstroy</a>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
             <div class="header__nav__inner">
               <ul class="header__nav-list">
                 <li class="header__nav__item">
@@ -167,5 +168,15 @@
         </div>
       </div>
     </section>
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const header__nav__inner = document.querySelector(
+          ".header__nav__inner"
+        );
+        header__nav__inner.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

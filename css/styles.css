@@ -7,6 +7,234 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --white: #ffffff;
+  --black: #0000;
+}
+body {
+  margin: 0;
+}
+.header__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: black;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0 5px;
+  position: relative;
+}
+.header__nav__inner {
+  display: flex;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 53px;
+  font-weight: 700;
+  color: var(--white);
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav__item {
+  padding-right: 30px;
+  list-style: none;
+}
+.header__nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--white);
+}
+.header__content {
+  background-image: url("../img/bcc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__content__inner {
+  padding: 0;
+  margin: 0;
+  margin: 20px 30px 25px;
+  width: 40%;
+}
+.header__content-title {
+  font-weight: 200;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+  color: black;
+}
+.header__content__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header__content__wrapper-mail {
+  text-decoration: none;
+  border: 1px solid blue;
+  background-color: blue;
+  padding: 6px 20px 6px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+
+  margin-right: 29px;
+}
+.header__content__wrapper-call {
+  border-radius: 50%;
+  border: 2px solid blue;
+  padding: 5px 10px 0 10px;
+  color: blue;
+  line-height: 30px;
+}
+.header__service {
+  padding: 40px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__services-title {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+  width: 225px;
+}
+.header__services-icon {
+  font-size: 65px;
+  color: black;
+  width: 193px;
+  padding-left: 55px;
+}
+.header__services__wrapper {
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  .logo {
+    font-size: 35px;
+  }
+  .header__nav__inner {
+    display: none;
+  }
+  .header__nav__inner.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .header__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+  .header__nav__item {
+    padding: 20px;
+    margin: 2px;
+  }
+
+  .header__nav__link {
+    color: #000;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+  }
+  .menuToggle.active {
+    background: url(../img/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+  }
+  .header__content-title {
+    line-height: 30px;
+    margin: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav__inner.active {
+    width: 100%;
+    height: 80%;
+  }
+  .header__content__inner {
+    width: 56%;
+  }
+  .header__service {
+    display: flex;
+    justify-content: center;
+  }
+  .header__content-title {
+    font-size: 25px;
+  }
+
+  .header__services-icon {
+    font-size: 50px;
+
+    width: 180px;
+    padding-left: 60px;
+  }
+  .header__services-title {
+    font-size: 30px;
+  }
+  .header__services__wrapper {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .header__content-title {
+    font-size: 14px;
+    padding-bottom: 50px;
+  }
+  .header__content {
+    justify-content: center;
+    background-position: center;
+    background-size: center;
+    justify-content: flex-end;
+    height: 100vh;
+    align-items: center;
+  }
+  .header__content__inner {
+    padding: 0;
+    margin: 0;
+    margin: 20px 30px 25px;
+    width: 100%;
+  }
+  .header__service {
+    justify-content: center;
+    height: 100vh;
+  }
+  .header__services-icon {
+    font-size: 40px;
+    width: 150px;
+  }
+  .header__services-title {
+    font-size: 19px;
+  }
+  .header__services-title:last-child {
+    padding-left: 5px;
+  }
+  .header__services__wrapper {
+    text-align: center;
+  }
+}
+
 @import url("./index.css");
 
 @import url("./catalog.css");

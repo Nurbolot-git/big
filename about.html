@@ -15,88 +15,100 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>About</title>
   </head>
-  <header class="header">
-    <div class="header__container">
-      <div class="header__top">
-        <div class="header__nav">
-          <a href="/" class="logo">Bigstroy</a>
-          <div class="header__nav__inner">
-            <ul class="header__nav-list">
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="#">Каталог</a>
-              </li>
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="#">О нашем магазине</a>
-              </li>
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="#">Обратная связь</a>
-              </li>
-            </ul>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__top">
+          <div class="header__nav">
+            <a href="/" class="logo">Bigstroy</a>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
+            <div class="header__nav__inner">
+              <ul class="header__nav-list">
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="#">Каталог</a>
+                </li>
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="#">О нашем магазине</a>
+                </li>
+                <li class="header__nav__item">
+                  <a class="header__nav__link" href="#">Обратная связь</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <section class="about__top">
-    <div class="container">
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a href="" class="breadcrumbs__link">Главная</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="" class="breadcrumbs__link breadcrumbs__link--active"
-              >О нашем магазине</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="about__info">
-        <h3 class="about__info__title">О НАШЕМ МАГАЗИНЕ</h3>
-        <div class="about__info__inner">
-          <ul class="about__info__inner__list">
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Известные торговые бренды</a
-              >
+    </header>
+    <section class="about__top">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link">Главная</a>
             </li>
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Комплексное снабжение</a
-              >
-            </li>
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Предусмотрена возможность самовывоза приобретенного товара</a
-              >
-            </li>
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Цены производителей</a
-              >
-            </li>
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Посетив наш магазин, вы не уйдетё без выгодной покупки</a
-              >
-            </li>
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Очень удобный сервис, для тех, кто ценит свое время</a
-              >
-            </li>
-            <li class="about__info__inner__item">
-              <a class="about__info__inner__link" href="#"
-                >Тысячи различных товаров</a
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link breadcrumbs__link--active"
+                >О нашем магазине</a
               >
             </li>
           </ul>
         </div>
-        <div class="about__info__bottom">
-          <h6 class="about__info__bottom-title">У нас есть все!</h6>
+        <div class="about__info">
+          <h3 class="about__info__title">О НАШЕМ МАГАЗИНЕ</h3>
+          <div class="about__info__inner">
+            <ul class="about__info__inner__list">
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Известные торговые бренды</a
+                >
+              </li>
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Комплексное снабжение</a
+                >
+              </li>
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Предусмотрена возможность самовывоза приобретенного товара</a
+                >
+              </li>
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Цены производителей</a
+                >
+              </li>
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Посетив наш магазин, вы не уйдетё без выгодной покупки</a
+                >
+              </li>
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Очень удобный сервис, для тех, кто ценит свое время</a
+                >
+              </li>
+              <li class="about__info__inner__item">
+                <a class="about__info__inner__link" href="#"
+                  >Тысячи различных товаров</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="about__info__bottom">
+            <h6 class="about__info__bottom-title">У нас есть все!</h6>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <body></body>
+    </section>
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const header__nav__inner = document.querySelector(
+          ".header__nav__inner"
+        );
+        header__nav__inner.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
