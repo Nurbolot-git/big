@@ -72,8 +72,17 @@
     font-size: 18px;
     width: 100%;
   }
+  .breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -42px;
+  }
 }
 @media (max-width: 400px) {
+  .breadcrumbs__item {
+    padding-left: 5px;
+    width: 100%;
+  }
   .about__info__inner__list {
     display: flex;
     justify-content: center;

@@ -158,14 +158,25 @@
   .products__top {
     flex-direction: column;
 }
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -45px;
+}
 }
 @media (max-width :400px){
   .products__filter-title {
     font-size: 20px;
+  }
+  .breadcrumbs__list {
+    width: 100%;
+    flex-wrap: wrap;
   }
   .breadcrumbs__item {
     font-size: 17px;
   }
   .products__filter-select {
     font-size: 15px;
+}
+
 }
